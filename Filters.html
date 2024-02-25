@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtri</title>
+    <link rel='stylesheet' href='Filters.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</head>
+<body>
+
+    <button id='ponastavi' onclick="ponastavi(defaultData)">Reset</button>
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button></br>
+
+<div id="ena">
+        <p id="naslov" >FILTERS</p>
+
+        <button id='grayscale' onclick="grayscale()">Grayscale</button>
+        <button id='tresholding' onclick="tresholding()">Tresholding</button></br>
+
+
+    <button onclick="boxblur()">Box blur</button>
+    <button onclick="gaussian()">Gaussian blur</button></br>
+    <button onclick="sobel()">Sobel</button>
+    <button onclick="laplace()">Laplace</button></br>
+    <button onclick="sharpening()">Sharpening</button>
+    <button onclick="unsharpMasking()">Unsharp masking</button></br>
+
+</br>
+    
+        <button id='channel' onclick="poudariKanal()">Highlight color channel</button>
+        <button id='channel' onclick="odstraniKanal()">Remove color channel</button></br>
+        <input type="radio" name="barva" value="red" checked>red
+        <input type="radio" name="barva" value="blue">blue
+        <input type="radio" name="barva" value="green">green
+    
+</br>  </br> 
+    <b><p>Contrast</p>
+    <input id="kontrast" type="range" min="-50" max="50" value="0">
+    
+    <p>Brightness</p>
+    <input id="svetlost" type="range" min="0" max="300" value="150">
+
+    <br>
+    <br>
+   
+    Brush color
+    <input id="barva" type="color"><br>
+    
+    Check to enable drawing <input id="risanje" type="checkbox"></b>
+
+</div>
+
+<div id="dva">
+    <script src='Filters.js'></script>
+</div>
+
+
+<!-- HISTOGRAM  -->
+<div id="graf" style="width: 600px; height: 300px; margin-top: 50px;">
+    <canvas id="chart"></canvas>
+</div>
+
+<div id="tri">
+    <b><p id="matrikaNaslov">MATRIX</p><br>
+    <div id="polje"></div>
+    Matrix dimensions (X*X):  X = <input id="velikostMatrike" min="1" step="2" type="number"><br>
+    <br><button id='matrikaUstvari' onclick="customMatrix()">Create matrix</button><br>
+    <br><button id='matrikaGumb' onclick="uporabiMatriko()">Apply matrix</button><br>
+</div>
+
+</body>
+</html>

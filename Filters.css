@@ -1,0 +1,88 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,65,78,1) 35%, rgba(255,222,34,1) 100%);
+}
+
+button{
+    width: 197px;
+    background-color:lightgray;
+    border: solid black 1px;
+    color: black;
+    font-weight: bold;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+button:hover {
+    opacity: 1;
+    background-color: #ffde22;
+    color: #ff414e
+}
+
+#graf{
+    background-color: white;
+    background-size: 100px;
+}
+
+#ena{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 700px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    border: solid black 5px;
+    background: rgb(255,137,40);
+    background: linear-gradient(270deg, rgba(255,137,40,1) 35%, rgba(255,65,78,1) 100%);
+    padding: 40px;
+    border-radius: 30px;
+}
+
+#tri{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1250px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    border: solid black 5px;
+    background: rgb(255,137,40);
+    background: linear-gradient(90deg, rgba(255,137,40,1) 35%, rgba(255,222,34,1) 100%);
+    padding: 40px;
+    border-radius: 30px; 
+
+}
+
+#naslov{
+    font-size: 40px;
+    margin-top: -5px;
+}
+
+#svetlost, #kontrast{
+    width: 300px;
+    cursor: pointer;
+}
+
+#matrikaNaslov{
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+#velikostMatrike{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#polje{
+    margin-bottom: 50px;
+}
